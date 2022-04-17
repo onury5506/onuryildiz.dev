@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  onuryildizdev:
+    restart: always
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./pages:/hw/pages
+      - ./public:/hw/public
+      - ./styles:/hw/styles
