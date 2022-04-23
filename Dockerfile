@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:16-alpine
 
 RUN mkdir /onuryildiz.dev
 
@@ -6,7 +6,7 @@ WORKDIR /onuryildiz.dev
 
 COPY package.json /onuryildiz.dev/
 
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 COPY . /onuryildiz.dev/
 
