@@ -9,6 +9,7 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./pages:/hw/pages
-      - ./public:/hw/public
-      - ./styles:/hw/styles
+      - ./pages:/onuryildiz.dev/pages
+      - ./public:/onuryildiz.dev/public
+      - ./styles:/onuryildiz.dev/styles
+      - ./components:/onuryildiz.dev/components
