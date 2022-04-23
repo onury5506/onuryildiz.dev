@@ -6,13 +6,6 @@ import styles from '../styles/Home.module.css'
 import Intro from '../components/intro'
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { CSSProperties } from 'react'
-
-const parallaxLayerStyle: CSSProperties = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center"
-}
 
 const skillsimages = [
   "html.png",
@@ -35,10 +28,10 @@ const Home: NextPage = () => {
       {/* Skills */}
 
       {
-        skillsimages.map(image => {
+        skillsimages.map((image,i) => {
           let size = Math.random()*4+3
           return (
-            <ParallaxLayer offset={1} speed={Math.random() * 5+1}>
+            <ParallaxLayer key={image+i} offset={1} speed={Math.random() * 5+1}>
               <div style={{
                 position: "absolute",
                 left: `${Math.floor(Math.random() * 80)+10}vw`,
@@ -46,7 +39,7 @@ const Home: NextPage = () => {
                 width: `${size}vw`,
                 height: `${size}vw`
               }}>
-                <Image src={`/${image}`} layout="fill" />
+                <Image src={`/${image}`} alt={image} layout="fill" />
 
               </div>
             </ParallaxLayer>
@@ -68,7 +61,8 @@ const Home: NextPage = () => {
 
         speed={0.5}
         style={{ color: "white", display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize:30 }}>
-        <p style={{backgroundColor:"black"}}>
+        <p style={{backgroundColor:"rgba(0,0,0,0.7)",borderRadius:5}}>
+
           Nodejs<br/>
           React<br/>
           JavaScript<br/>

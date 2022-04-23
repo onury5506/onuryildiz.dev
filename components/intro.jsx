@@ -10,7 +10,7 @@ export default function Intro() {
             speed={1}
             style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <div id="introcontainer">
-                <h1>Hi,<br />I'm Onur,<br />Full Stack Developer,<br />And It Is My Journey.</h1>
+                <h1>Hi,<br />I&apos;m Onur,<br />Full Stack Developer,<br />And It Is My Journey.</h1>
                 <ScrollDown />
             </div>
         </ParallaxLayer>
