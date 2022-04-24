@@ -1,0 +1,21 @@
+.game{
+    display: inline-block;
+    width: 50vw;
+    text-align: center;
+}
+
+.game span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.game span a{
+    text-decoration: underline;
+    color: white;
+    margin-top: 10px;
+}
+
+.game .image{
+    display: inline-block;
+    width: 35%
+}
