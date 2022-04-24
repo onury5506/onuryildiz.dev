@@ -100,7 +100,7 @@ const Home: NextPage = () => {
               <Image src={`/tin.png`} alt={"Tin"} layout="responsive" width={"100vw"} height={"100vh"} />
             </div>
 
-            <span><a href="https://onury.itch.io/tin" target="_blank">Try it!</a></span>
+            <span><a href="https://onury.itch.io/tin" target="_blank" rel="noreferrer" >Try it!</a></span>
           </div>
 
           <div className={styles.game}>
@@ -110,7 +110,7 @@ const Home: NextPage = () => {
               <Image src={`/forbiddenfruit.png`} layout="responsive" width={"100vw"} height={"100vh"} />
             </div>
 
-            <span><a href="https://onury.itch.io/forbidden" target="_blank">Try it!</a></span>
+            <span><a href="https://onury.itch.io/forbidden" target="_blank" rel="noreferrer" >Try it!</a></span>
           </div>
 
         </div>
